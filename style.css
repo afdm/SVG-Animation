@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #252634;
+  display: flex;
+
+  min-height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.itworks svg path {
+  fill: transparent;
+  stroke-width: 1.5px;
+
+  animation-duration: 2s !important;
+}
+
+.itworks svg path:nth-child(1) {
+  stroke-dasharray: 167;
+  animation: trace-child-1 ease-in forwards;
+}
+.itworks svg path:nth-child(2) {
+  stroke-dasharray: 214;
+  animation: trace-child-2 ease-in forwards;
+}
+.itworks svg path:nth-child(3) {
+  stroke-dasharray: 525;
+  animation: trace-child-3 ease-in forwards;
+}
+.itworks svg path:nth-child(4) {
+  stroke-dasharray: 254;
+  animation: trace-child-4 ease-in forwards;
+}
+.itworks svg path:nth-child(5) {
+  stroke-dasharray: 182;
+  animation: trace-child-5 ease-in forwards;
+}
+.itworks svg path:nth-child(6) {
+  stroke-dasharray: 331;
+  animation: trace-child-6 ease-in forwards;
+}
+.itworks svg path:nth-child(7) {
+  stroke-dasharray: 278;
+  animation: trace-child-7 ease-in forwards;
+}
+
+.gears svg path {
+  transform-box: fill-box;
+  transform-origin: center;
+
+  fill: #d5926d;
+}
+
+#gear-1 {
+  animation: rotate 2s linear infinite;
+}
+
+#gear-2 {
+  animation: rotate 2s linear infinite reverse;
+}
+
+#gear-3 {
+  animation: rotate 1.2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes trace-child-1 {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 167;
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes trace-child-2 {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 213;
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes trace-child-3 {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 524;
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes trace-child-4 {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 254;
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
+@keyframes trace-child-5 {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 182;
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes trace-child-6 {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 330;
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes trace-child-7 {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: 278;
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
