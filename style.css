@@ -154,3 +154,9 @@ body {
     fill: rgba(255, 255, 255, 0.8);
   }
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column-reverse;
+  }
+}
